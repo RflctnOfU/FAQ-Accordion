@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gradient-to-b from-[hsl(273_75%_66%)] to-[hsl(240_73%_65%)] h-screen flex flex-col justify-center items-center font-kumbh"
+  >
+    <div
+      class="lg:h-[65%] h-[68%] w-[88%] lg:w-[65%] bg-white flex lg:flex-row flex-col rounded-3xl relative lg:mt-0 max-sm:mt-12"
+    >
+      <img
+        src="./images/illustration-box-desktop.svg"
+        alt="box"
+        class="absolute lg:top-[41%] lg:right-[90%] z-10 max-sm:hidden"
+      />
+      <img
+        src="./images/illustration-woman-online-mobile.svg"
+        alt="woman at desk"
+        class="sm:hidden absolute w-[240px] top-[-13.5vh] left-[12vw]"
+      />
+      <div
+        class="lg:rounded-l-3xl lg:w-1/2 w-full h-1/4 lg:h-full lg:bg-[url('../images/bg-pattern-desktop.svg')] bg-[url('../images/bg-pattern-mobile.svg')] lg:bg-[right_5.7vw_top_-37vh] bg-[right_12vw_top_0vh] bg-no-repeat relative"
+      >
+        <div
+          class="absolute lg:bg-[url('../images/illustration-woman-online-desktop.svg')] w-full h-full bg-no-repeat lg:bg-[top_10vh_left_-6vw]"
+        ></div>
+      </div>
+      <div
+        class="lg:w-1/2 w-full lg:h-full h-3/4 lg:rounded-r-3xl max-sm:rounded-b-3xl lg:pt-20 max-sm:px-4 flex flex-col lg:items-start items-center gap-4 text-xs overflow-y-hidden"
+      >
+        <h1 class="text-[hsl(237_12%_33%)] text-4xl font-bold font">FAQ</h1>
+        <div class="flex justify-between items-center w-4/5 group">
+          <div class="w-full flex justify-between items-center">
+            <details class="w-full open:font-bold group">
+              <summary class="flex justify-between w-full items-center">
+                <p class="hover:text-[hsl(14_88%_65%)] hover:cursor-pointer">
+                  How many team members can Iinvite?
+                </p>
+                <img
+                  src="./images/icon-arrow-down.svg"
+                  alt="down arrow"
+                  class="group-open:rotate-180 duration-300 ease-in-out"
+                />
+              </summary>
+              <p class="font-normal pt-4">
+                You can invite up to 2 additional users on the Free plan. There
+                is no limit on team members for the Premium plan.
+              </p>
+            </details>
+          </div>
+        </div>
+        <hr class="bg-[hsl(240_5%_91%)] w-4/5" />
+        <div class="flex justify-between items-center w-4/5 group">
+          <div class="w-full flex justify-between items-center">
+            <details class="w-full open:font-bold group">
+              <summary class="flex justify-between w-full items-center">
+                <p class="hover:text-[hsl(14_88%_65%)] hover:cursor-pointer">
+                  What is the maximum file upload size?
+                </p>
+                <img
+                  src="./images/icon-arrow-down.svg"
+                  alt="down arrow"
+                  class="group-open:rotate-180 duration-300 ease-in-out"
+                />
+              </summary>
+              <p class="font-normal pt-4">
+                No more than 2GB. All files in your account must fit your
+                allotted storage space.
+              </p>
+            </details>
+          </div>
+        </div>
+        <hr class="bg-[hsl(240_5%_91%)] w-4/5" />
+        <div class="flex justify-between items-center w-4/5 group">
+          <div class="w-full flex justify-between items-center">
+            <details class="w-full open:font-bold group">
+              <summary class="flex justify-between w-full items-center">
+                <p class="hover:text-[hsl(14_88%_65%)] hover:cursor-pointer">
+                  How do I reset my password?
+                </p>
+                <img
+                  src="./images/icon-arrow-down.svg"
+                  alt="down arrow"
+                  class="group-open:rotate-180 duration-300 ease-in-out"
+                />
+              </summary>
+              <p class="font-normal pt-4">
+                Click “Forgot password” from the login page or “Change password”
+                from your profile page. A reset link will be emailed to you.
+              </p>
+            </details>
+          </div>
+        </div>
+        <hr class="bg-[hsl(240_5%_91%)] w-4/5" />
+        <div class="flex justify-between items-center w-4/5 group">
+          <div class="w-full flex justify-between items-center">
+            <details class="w-full open:font-bold group">
+              <summary class="flex justify-between w-full items-center">
+                <p class="hover:text-[hsl(14_88%_65%)] hover:cursor-pointer">
+                  Can I cancel my subscription?
+                </p>
+                <img
+                  src="./images/icon-arrow-down.svg"
+                  alt="down arrow"
+                  class="group-open:rotate-180 duration-300 ease-in-out"
+                />
+              </summary>
+              <p class="font-normal pt-4">
+                Yes! Send us a message and we’ll process your request no
+                questions asked.
+              </p>
+            </details>
+          </div>
+        </div>
+        <hr class="bg-[hsl(240_5%_91%)] w-4/5" />
+        <div class="flex justify-between items-center w-4/5 group">
+          <div class="w-full flex justify-between items-center">
+            <details class="w-full open:font-bold group">
+              <summary class="flex justify-between w-full items-center">
+                <p class="hover:text-[hsl(14_88%_65%)] hover:cursor-pointer">
+                  Do you provide additional support?
+                </p>
+                <img
+                  src="./images/icon-arrow-down.svg"
+                  alt="down arrow"
+                  class="group-open:rotate-180 duration-300 ease-in-out"
+                />
+              </summary>
+              <p class="font-normal pt-4">
+                Chat and email support is available 24/7. Phone lines are open
+                during normal business hours.
+              </p>
+            </details>
+          </div>
+        </div>
+        <hr class="bg-[hsl(240_5%_91%)] w-4/5" />
+      </div>
+    </div>
+    <!--  
+      
+        
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>
